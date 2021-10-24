@@ -16,7 +16,7 @@ const cartRoute = require("./routes/cart");
 const stripeRoute = require("./routes/stripe");
 
 // env
-const port = process.env.API_PORT || 5000;
+const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
