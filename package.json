@@ -1,23 +1,27 @@
 {
-  "name": "jshop",
-  "version": "1.0.0",
-  "description": "Backend For J Shop",
-  "main": "app.js",
-  "scripts": {
-    "start": "nodemon app.js"
-  },
-  "author": "Jawad Rafique",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "crypto-js": "^4.1.1",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.0.9",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.13",
-    "stripe": "^8.184.0"
-  },
-  "devDependencies": {}
+    "name": "jshop",
+    "version": "1.0.0",
+    "description": "Backend For J Shop",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "author": "Jawad Rafique",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "crypto-js": "^4.1.1",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.0.9",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.13",
+        "stripe": "^8.184.0"
+    },
+    "devDependencies": {},
+    "engines": {
+        "node": ">=14.18.1"
+    }
 }
