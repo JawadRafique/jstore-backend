@@ -34,12 +34,12 @@ mongoose
     });
 
 // Routes
-app.use(`${process.env.API_URL}auth`, authRoute);
-app.use(`${process.env.API_URL}users`, userRoute);
-app.use(`${process.env.API_URL}products`, productRoute);
-app.use(`${process.env.API_URL}orders`, orderRoute);
-app.use(`${process.env.API_URL}carts`, cartRoute);
-app.use(`${process.env.API_URL}checkout`, stripeRoute);
+app.use(`/auth`, authRoute);
+app.use(`/users`, userRoute);
+app.use(`/products`, productRoute);
+app.use(`/orders`, orderRoute);
+app.use(`/carts`, cartRoute);
+app.use(`/checkout`, stripeRoute);
 
 // Server
 app.listen(port, () => {
