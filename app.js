@@ -22,12 +22,14 @@ const port = process.env.PORT || 5000;
 // Middleware
 app.use(express.json());
 app.use(morgan("tiny"));
-app.use(
-    cors({
-        origin: "https://jstore-app.herokuapp.com",
-        methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    })
-);
+app.use(cors());
+// app.options("*", cors());
+// app.use(
+//     cors({
+//         origin: "https://jstore-app.herokuapp.com",
+//         methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+//     })
+// );
 
 // DB
 mongoose

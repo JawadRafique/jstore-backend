@@ -77,7 +77,7 @@ router.post("/login", async (req, res) => {
         const { password, ...others } = user._doc;
         res.status(200).send({
             data: others,
-            Token: accessToken,
+            token: accessToken,
         });
     } catch {
         res.status(400).send({
