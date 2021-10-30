@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(morgan("tiny"));
 app.use(
     cors({
-        origin: "https://jstore-app.herokuapp.com/",
+        origin: "https://jstore-app.herokuapp.com",
         methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     })
 );
