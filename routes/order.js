@@ -9,7 +9,12 @@ const Order = require("../models/Order");
 // Create
 router.post("/", verifyToken, async (req, res) => {
     try {
-        await Order.create({ ...req.body })
+        await Order.create({
+            userId: req.body.userId,
+            products: req.body.products,
+            amount: req.body.amount,
+            address: req.body.address,
+        })
             .then((result) => {
                 res.status(200).send(result);
             })
