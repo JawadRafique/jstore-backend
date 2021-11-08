@@ -11,6 +11,7 @@ const userRoute = require("./routes/user");
 const productRoute = require("./routes/product");
 const orderRoute = require("./routes/order");
 const cartRoute = require("./routes/cart");
+const mailFunction = require("./routes/mailFunction");
 const welcomeNote = require("./routes/welcomeNote");
 
 // payment Gateway
@@ -48,6 +49,7 @@ app.use(`/products`, productRoute);
 app.use(`/orders`, orderRoute);
 app.use(`/carts`, cartRoute);
 app.use(`/checkout`, stripeRoute);
+app.use(`/email`, mailFunction);
 app.use(`/`, welcomeNote);
 
 // Server
