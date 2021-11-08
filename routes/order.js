@@ -19,7 +19,7 @@ router.post("/", verifyToken, async (req, res) => {
                 res.status(200).send(result);
             })
             .catch((err) => {
-                res.status(400).send("Required Field Missing");
+                res.status(400).send("Required Field Missing", err.message);
             });
     } catch {
         res.status(400).send({
