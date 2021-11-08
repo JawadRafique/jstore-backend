@@ -7,7 +7,7 @@ const {
 const Order = require("../models/Order");
 
 // Create
-router.post("/", verifyToken, async (req, res) => {
+router.post("/", async (req, res) => {
     try {
         await Order.create({
             userId: req.body.userId,
