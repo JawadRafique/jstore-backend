@@ -20,7 +20,7 @@ const mailOptions = {
 // Mail
 router.post("/", (req, res) => {
     try {
-        transporter.sendMail(mailData, function (err, info) {
+        transporter.sendMail(mailOptions, function (err, info) {
             if (err)
                 res.status(400).send({
                     status: "Error in Mail function",
